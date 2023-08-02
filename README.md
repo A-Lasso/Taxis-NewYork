@@ -47,17 +47,20 @@ El proyecto se desarrollará utilizando las siguientes tecnologías:
 
 **Semana 1:**
 
-- .
-- .
-- .
+- Documento de alcance del proyecto
+- Tecnologias a usar
+- Repositorio
+- Extracción y tranformación de datos, EDA preliminar
+- Creación de KPIs
 
 **Semana 2:**
 
-- .
-- .
+- Pipeline
+- DataWarehouse automatizado con carga inicial
+- Deploy en Cloud
 
 **Semana 3:**
 
-- .
-- .
-- .
+- Storytelling e Insights
+- Dashboard
+- Modelo de Machine Learning
