@@ -4,7 +4,7 @@
 
 Una empresa de servicios de transporte busca ingresar al mercado actual con un enfoque hacia un futuro menos contaminado. Su principal negocio se enfoca en los micros (autobuses), pero también están interesados en los automóviles particulares, como Uber o taxis, y desean evaluar su impacto en el medio ambiente (contaminación sonora, emisiones de CO2). Asimismo, considerarán la posibilidad de implementar vehículos eléctricos para reducir la huella ambiental.
 
-Para comenzar este proyecto, se realizará un reconocimiento del sector, con un enfoque especial en los taxis en la ciudad de Nueva York.
+Para comenzar este proyecto, se realizará un reconocimiento del sector y de los factores ambientales asociados a estados unidos para lograr evaluar el impacto medio ambiental existente. Para lograr este análisis se realizó un enfoque especial del transporte a través de taxis en la ciudad de Nueva York.
 
 ## Métricas Sugeridas
 
@@ -28,7 +28,7 @@ Para comenzar este proyecto, se realizará un reconocimiento del sector, con un 
 2. Aumento del uso de autos eléctricos en Nueva York
 3. Disminución de la contaminación sonora en Nueva York
 4. Reducción del porcentaje de aumento de la temperatura (medición adicional)
-5. ...
+5. Reducción de enfermedades respiratorias asociadas a emisión de CO2 
 
 ## Alcance del Proyecto
 
@@ -38,7 +38,7 @@ El alcance del proyecto se centrará en el análisis y reconocimiento del sector
 
 El proyecto se desarrollará utilizando las siguientes tecnologías:
 
-- Python (para el procesamiento y análisis de datos)
+- Python y sus librerías asociadas (para el procesamiento y análisis de datos)
 - SQL (para consultas y manipulación de bases de datos)
 - Google Cloud Platform (GCP) (para el almacenamiento y procesamiento de datos en la nube)
 - Power BI (para la creación de dashboards e informes visuales)
