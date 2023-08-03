@@ -32,7 +32,8 @@ Para comenzar este proyecto, se realizará un reconocimiento del sector y de los
 
 ## Alcance del Proyecto
 
-El alcance del proyecto se centrará en el análisis y reconocimiento del sector de los taxis en Nueva York, su huella ambiental y la posibilidad de mejorar el medio ambiente con un enfoque en vehículos mas sustentables (por ejemplo vehículos eléctricos).
+El alcance del proyecto se centrará en el análisis y reconocimiento del sector de los taxis en Nueva York, su huella ambiental y la posibilidad de mejorar el medio ambiente con un enfoque en vehículos mas sustentables (por ejemplo vehículos eléctricos).<br>
+No se utilizaran datos que abarquen partes geograficas fuera de New York. Con los datos utilizados no se diferenciara cada modelo de auto ni su tipo de consumo, simplemente se diferencia entre no-electrico (completamente a gas;diesel;gasolina o hibridos) y electricos.
 
 ## Lenguajes y Herramientas
 
