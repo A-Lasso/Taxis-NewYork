@@ -12,4 +12,4 @@ Los csv afectados por este cambio de id son:<br>
 - "taxi-zone.csv" -> también renombrado a "taxi_zone.csv"
 La tabla agregada es:
 - "Borough" ("Borough.csv")
-Cada uno de estos csv´s se guardaron en la carpeta MySQL, su versión anterior sigue en la parte de procesados(en la carpeta que corresponda)
+Cada uno de estos csv´s se guardaron en la carpeta MySQL, su versión anterior sigue en la parte de procesados(en la carpeta que corresponda).
