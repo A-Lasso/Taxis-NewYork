@@ -1,0 +1,38 @@
+### Calidad del Aire NYC
+- Name:	Indicador de emision producida, o relacion entre muertes y enfermedades con esta emision
+- Measure:	Como se mide el indicador
+- Measure Info:	Informacion como la unidad que se uso para medir esta emision
+- Geo Type Name:	Tipo de ubicacion geografica de los datos(borough/distrito o citywide/NYC)
+- Geo Place Name:	Nombre de la ubicacion geografica
+- Data Value:	El valor de la medida
+- Stations:	Estacion del anio cuando se tomo esta medida(winter, summer, anuall)
+- Final Date:	Fecha en que se termino de tomar esta medida
+---
+### Sonido Presencia NYC
+- Split:	Los sensores de sonido se dividen en 3, test, train, validate.
+- Sendor id:	Id de cada sensor
+- Borough:	Distrito del sensor
+- Year:	Anio cuando se anoto
+- 5-1_car-horn_presence:	Presencia, vocina de auto
+- 5-2_car-alarm_presence:	Presencia, alarma de auto
+- 5-4_reverse-beeper_presence:	Presencia, senial de marcha atras
+- 1_engine_presence:	Presencia, motor
+- 2_machinery-impact_presence:	Presencia, impacto de maquinaria
+- 3_non-machinery-impact_presence:	Presencia, impacto de no maquinaria
+- 4_powered-saw_presence:	Presencia, sierra
+- 5_alert-signal_presence:	Presencia, senial de alerta
+- 6_music_presence:	Presencia, musica
+- 7_human-voice_presence:	Presencia, voz humana
+- 8_dog_presence:	Presencia, perro
+---
+### Energia USA
+- Country:	Pais
+- Energy_type:	Tipo de energia
+- Year:	Anio cuando se midio
+- Energy_consumption:	Consumo de energia (quad Btu)
+- Energy_production:	Produccion de energia (quad Btu)
+- GDP:	PIB de los países en paridad de poder adquisitivo, medida (miles de millones de $ PPA de 2015)
+- Population:	Poblacion
+- Energy_intensity_per_capita:	La intensidad energética es una medida de la eficiencia energética de una economía. Se calcula como unidades de energía por unidad de habitante (capita = persona individual), medida (MMBtu/persona)
+- Energy_intensity_by_GDP:	La intensidad energética es una medida de la eficiencia energética de una economía. Se calcula como unidades de energía por unidad de PIB, medido (1000 Btu/2015$ PIB PPA)
+- CO2_emission:	La cantidad de C02 emitida, medida (MM de toneladas de CO2)
