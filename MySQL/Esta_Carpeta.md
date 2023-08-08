@@ -7,7 +7,7 @@ Los .csv exportados desde el archivo .sql con los cambios ya realizados (o un .c
 
 ## ¿Qué csv´s se editaron?
 Los csv afectados por este cambio de id son:<br>
-- "Calidad del aire.csv"
+- "Calidad del aire.csv" -> renombrado a "Calidad_aire.csv"
 - "Sonido_presencia.csv"
 - "taxi-zone.csv" -> también renombrado a "taxi_zone.csv"
 La tabla agregada es:
