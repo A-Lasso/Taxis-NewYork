@@ -47,7 +47,10 @@ CREATE TABLE `Calidad_aire`(
 ;
 #drop table `Calidad_aire`;
 
-LOAD DATA INFILE "D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\Datasets_procesados_contaminacion\\taxi-zone.csv"
+# Recordar editar las rutas a donde quedaron dentro de su pc al traerse los archivos desde github.
+# Lo que va a variar son desde "Proyecto_Grupal"-incluyendo- hacia atras.
+
+LOAD DATA INFILE "D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\Datasets_procesados_cars\\taxi-zone.csv"
 INTO TABLE `taxi-zone`
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -91,6 +94,9 @@ SET S.id_Geo= b.id_Borough;
 ALTER TABLE Sonido_presencia DROP Borough;
 ALTER TABLE `taxi-zone` DROP Borough;
 ALTER TABLE `Calidad_aire` DROP `Geo Place Name`;
+
+# Lo mismo que antes, recordar de cambiar las rutas de guardado.
+# Se debe guardar dentro de la carpeta Mysql, por lo tanto las únicas partes a editar son desde "Proyecto_Grupal"-incluyendo- hacia atras.
 
 SELECT *
 INTO OUTFILE 'D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\MySQL\\taxi_zone.csv'
