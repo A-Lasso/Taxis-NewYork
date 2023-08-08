@@ -34,6 +34,18 @@ CREATE TABLE `Sonido_presencia`(
 `8_dog_presence`INT
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci
 ;
+CREATE TABLE `Calidad_aire`(
+`Name` VARCHAR(200),
+`Measure` VARCHAR(200),
+`Measure Info` VARCHAR(50),
+`Geo Type Name` varchar(50),
+`Geo Place Name`varchar(50),
+`Data Value` DECIMAL(18,9),
+`Stations` VARCHAR(50),
+`Year` INT
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci
+;
+#drop table `Calidad_aire`;
 
 LOAD DATA INFILE "D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\Datasets_procesados_contaminacion\\taxi-zone.csv"
 INTO TABLE `taxi-zone`
@@ -47,23 +59,38 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
+LOAD DATA INFILE "D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\Datasets_procesados_contaminacion\\Calidad del aire.csv"
+INTO TABLE `Calidad_aire`
+FIELDS TERMINATED BY ','
+ENCLOSED BY '\"' ESCAPED BY '\"' 
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
 INSERT INTO `Borough`(Borough)
 SELECT DISTINCT Borough FROM `taxi-zone`;
+INSERT INTO `Borough`(Borough) 
+VALUE("New York City")
+;
 
 ALTER TABLE Sonido_presencia ADD id_Borough INT NOT NULL DEFAULT 0 AFTER `Borough`;
+ALTER TABLE `taxi-zone` ADD id_Borough INT NOT NULL DEFAULT 0 AFTER `Borough`;
+ALTER TABLE `Calidad_aire` ADD id_Geo INT NOT NULL DEFAULT 0 AFTER `Geo Place Name`;
 
 UPDATE Sonido_presencia S JOIN Borough b
 ON (S.borough = b.borough)
 SET S.id_Borough = b.id_Borough;
 
-ALTER TABLE `taxi-zone` ADD id_Borough INT NOT NULL DEFAULT 0 AFTER `Borough`;
-
 UPDATE `taxi-zone` S JOIN Borough b
 ON (S.borough = b.borough)
 SET S.id_Borough = b.id_Borough;
 
+UPDATE `Calidad_aire` S JOIN Borough b
+ON (S.`Geo Place Name` = b.borough)
+SET S.id_Geo= b.id_Borough;
+
 ALTER TABLE Sonido_presencia DROP Borough;
 ALTER TABLE `taxi-zone` DROP Borough;
+ALTER TABLE `Calidad_aire` DROP `Geo Place Name`;
 
 SELECT *
 INTO OUTFILE 'D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\MySQL\\taxi_zone.csv'
@@ -77,8 +104,35 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 FROM `Sonido_presencia`;
 
+
 SELECT *
 INTO OUTFILE 'D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\MySQL\\Borough.csv'
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n'
 FROM `Borough`;
+
+/*
+`Name` VARCHAR(200),
+`Measure` VARCHAR(200),
+`Measure Info` VARCHAR(50),
+`Geo Type Name` varchar(50),
+`id_Geo`(tipo int agregado en las alteraciones),
+`Data Value` DECIMAL(18,9),
+`Stations` VARCHAR(50),
+`Year` INT
+*/
+
+SELECT 
+    CONCAT('"', `Name`, '"') AS `Name`,
+    CONCAT('"', `Measure`, '"') AS `Measure`,
+    CONCAT('"', `Measure Info`, '"') AS `Measure Info`,
+    CONCAT('"', `Geo Type Name`, '"') AS `Geo Type Name`,
+    `id_Geo`,
+    `Data Value`,
+    CONCAT('"', `Stations`, '"') AS Stations,
+    `Year`
+INTO OUTFILE 'D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\MySQL\\Calidad_aire.csv'
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n'
+FROM `Calidad_aire`;
+
