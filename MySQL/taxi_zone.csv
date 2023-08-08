@@ -1,4 +1,4 @@
-LocationID,Borough,Zone,service_zone 
+LocationID,id_Borough,Zone,service_zone 
 1,1,Newark Airport,EWR
 2,2,Jamaica Bay,Boro Zone
 3,3,Allerton/Pelham Gardens,Boro Zone
