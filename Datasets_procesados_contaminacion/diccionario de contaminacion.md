@@ -1,4 +1,4 @@
-### Calidad del Aire NYC
+### Calidad del Aire NYC, usada para conocer los mayores focos de contaminacion en NYC y sus repercusiones
 - Name:	Indicador de emision producida, o relacion entre muertes y enfermedades con esta emision
 - Measure:	Como se mide el indicador
 - Measure Info:	Informacion como la unidad que se uso para medir esta emision
@@ -8,7 +8,7 @@
 - Stations:	Estacion del anio cuando se tomo esta medida(winter, summer, anuall)
 - Final Date:	Fecha en que se termino de tomar esta medida
 ---
-### Sonido Presencia NYC
+### Sonido Presencia NYC, usada tener una distribucion de los sonidos mas presentes en NYC
 - Split:	Los sensores de sonido se dividen en 3, test, train, validate.
 - Sendor id:	Id de cada sensor
 - Borough:	Distrito del sensor
@@ -25,7 +25,7 @@
 - 7_human-voice_presence:	Presencia, voz humana
 - 8_dog_presence:	Presencia, perro
 ---
-### Energia USA
+### Energia USA, usada para darnos unos vistaso a las distintas fuentes de energia en USA
 - Country:	Pais
 - Energy_type:	Tipo de energia
 - Year:	Anio cuando se midio
