@@ -140,5 +140,6 @@ SELECT
 INTO OUTFILE 'D:\\Programacion\\DataScience_Henry\\Proyecto_Grupal\\MySQL\\Calidad_aire.csv'
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n'
-FROM `Calidad_aire`;
+FROM `Calidad_aire`
+;
 
