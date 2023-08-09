@@ -1,0 +1,45 @@
+### Electric Vehicles per County New York State: Usada para entender la penetración actual de los autos electricos en New York City, y como esta región se compara al resto de regiones del Estado de New York.
+- REDC: 
+- County: 
+- Light-Duty Vehicles: 
+- BEVs on the Road: 
+- PHEVs on the Road: 
+- EVs on the Road: 
+- Level 2 Ports: 
+- DCFC Ports: 
+- LDVs per 1k People: 
+- BEVs per 1k People: 
+- PHEVs per 1k People: 
+- BEVS per DCFC Ports: 
+- EVs per Level 2 Port: 
+- LD EV Market Share (%): 
+
+---
+### Clima New York City, sensación térmica, lluvia y nieve: Usada alimentar modelo de Machine Learning con el cual identificar cómo los patrones climáticos afectan la demanda de taxis.
+- Split:	Los sensores de sonido se dividen en 3, test, train, validate.
+- Sendor id:	Id de cada sensor
+- Borough:	Distrito del sensor
+- Year:	Anio cuando se anoto
+- 5-1_car-horn_presence:	Presencia, vocina de auto
+- 5-2_car-alarm_presence:	Presencia, alarma de auto
+- 5-4_reverse-beeper_presence:	Presencia, senial de marcha atras
+- 1_engine_presence:	Presencia, motor
+- 2_machinery-impact_presence:	Presencia, impacto de maquinaria
+- 3_non-machinery-impact_presence:	Presencia, impacto de no maquinaria
+- 4_powered-saw_presence:	Presencia, sierra
+- 5_alert-signal_presence:	Presencia, senial de alerta
+- 6_music_presence:	Presencia, musica
+- 7_human-voice_presence:	Presencia, voz humana
+- 8_dog_presence:	Presencia, perro
+---
+### Energia USA, usada para darnos unos vistaso a las distintas fuentes de energia en USA
+- Country:	Pais
+- Energy_type:	Tipo de energia
+- Year:	Anio cuando se midio
+- Energy_consumption:	Consumo de energia (quad Btu)
+- Energy_production:	Produccion de energia (quad Btu)
+- GDP:	PIB de los países en paridad de poder adquisitivo, medida (miles de millones de $ PPA de 2015)
+- Population:	Poblacion
+- Energy_intensity_per_capita:	La intensidad energética es una medida de la eficiencia energética de una economía. Se calcula como unidades de energía por unidad de habitante (capita = persona individual), medida (MMBtu/persona)
+- Energy_intensity_by_GDP:	La intensidad energética es una medida de la eficiencia energética de una economía. Se calcula como unidades de energía por unidad de PIB, medido (1000 Btu/2015$ PIB PPA)
+- CO2_emission:	La cantidad de C02 emitida, medida (MM de toneladas de CO2)
