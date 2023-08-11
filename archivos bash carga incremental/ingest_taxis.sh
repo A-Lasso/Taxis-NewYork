@@ -8,7 +8,7 @@ fi
 export BUCKET=$1
 
 # get zip files from BTS, extract csv files
-for YEAR in `seq 2023 2023`; do
+for YEAR in `seq 2022 2023`; do
    for MONTH in `seq -w 01 12`; do
       bash download_taxis.sh $YEAR $MONTH
       # upload the raw parquet files to our GCS bucket

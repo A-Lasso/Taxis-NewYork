@@ -8,4 +8,4 @@ fi
 BUCKET=$1
 
 echo "Uploading to bucket $BUCKET..."
-gsutil -m cp *.parquet gs://$BUCKET/taxis/
+gsutil -m cp taxis_raw/*.parquet gs://$BUCKET/taxis/
