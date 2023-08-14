@@ -8,7 +8,7 @@ La ejecución de los pipelines se lleva a cabo mediante la consola, escribiendo 
 
 ``/Pipelines.py \``<br>
 ``    --runner DataflowRunner \``<br>
-``    --project moonlit-grail-395212 \``<br>
+``    --project moonlit-grail-###### \``<br>
 ``    --pipeline [pipeline a usar] ``<br>
 
 Descripción de las opciones de ejecución:
